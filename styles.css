@@ -1,2 +1,168 @@
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+body {
+    margin: 30px 30px;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(6,auto);
+    grid-template-areas: 
+        "1"
+        "2"
+        "3"
+        "4"
+        "5"
+        "6"
+    ;
+    margin-bottom: 100px;
+}
+
+
+
+/* ====== introduction styling ====== */
+
+.introduction {
+    grid-area: 1;
+    margin-bottom: 200px;
+}
+
+.introduction > img:first-child {
+    float: left;
+    width: 100px;
+}
+
+.int-btn-one {
+    float: right;
+}
+
+.introduction > h1 {
+    margin-top: 80px;
+}
+
+.int-btn-two{
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+
+figure {
+    margin-top: 80px;
+}
+
+figure > img {
+    float: left;
+}
+
+figure > h2 {
+    /* I want the communities icon to float over the follower counter! is display inline-block and width working? */
+    display: inline-block;
+    width: 100%;
+}
+
+
+
+
+/* ====== grow together styling ====== */
+
+
+.grow-together {
+    grid-area: 2;
+    /* has a wavy light-blue background! */
+    margin-bottom: 200px;
+}
+
+.grow-together > img {
+    margin-bottom: 50px;
+}
+
+
+/* ====== flowing conversations styling ====== */
+
+.flowing-conversations {
+    grid-area: 3;
+    margin-bottom: 200px;
+}
+
+.flowing-conversations > img {
+    margin-bottom: 50px;
+}
+
+
+
+
+/* ====== flowing conversations styling ====== */
+
+.your-users {
+    grid-area: 4;
+    /* has a wavy light-blue background! */
+    margin-bottom: 200px;
+}
+
+.your-users > img {
+    margin-bottom: 50px;
+}
+
+
+/* ====== call for action styling ====== */
+
+.call-for-action {
+    grid-area: 5;
+    margin-bottom: 200px;
+}
+
+
+
+/* ====== call for action styling ====== */
+
+.newsletter {
+    grid-area: 6;
+    text-align: left;
+    /* has a wavy dark-green background! */
+}
+
+form > input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form > button {
+    float: right;
+}
+
+
+
+/* ====== footer styling ====== */
+
+footer {
+    text-align: left;
+    /* has a wavy dark-green background! */
+}
+
+footer > img {
+    /* float: left; */
+    width: 180px;
+}
+
+footer > p {
+    margin-bottom: 40px;
+}
+
+footer > nav > ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.contact > li {
+    margin-top: 10px;
+}
+
+.social > li {
+    display: inline-block;
+}
