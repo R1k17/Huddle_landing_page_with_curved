@@ -25,6 +25,9 @@ main {
     margin-bottom: 100px;
 }
 
+.section-img {
+    margin-bottom: 50px;
+}
 
 
 /* ====== mobile: introduction styling ====== */
@@ -110,9 +113,9 @@ figure > h2 {
     margin-bottom: 200px;
 }
 
-.grow-together > img {
+/* .grow-together > img {
     margin-bottom: 50px;
-}
+} */
 
 
 /* ====== mobile: flowing conversations styling ====== */
@@ -122,9 +125,9 @@ figure > h2 {
     margin-bottom: 200px;
 }
 
-.flowing-conversations > img {
+/* .flowing-conversations > img {
     margin-bottom: 50px;
-}
+} */
 
 
 
@@ -137,9 +140,9 @@ figure > h2 {
     margin-bottom: 200px;
 }
 
-.your-users > img {
+/* .your-users > img {
     margin-bottom: 50px;
-}
+} */
 
 
 /* ====== mobile: call for action styling ====== */
@@ -157,6 +160,7 @@ figure > h2 {
     grid-area: 6;
     text-align: left;
     /* has a wavy dark-green background! */
+    margin-bottom: 100px;
 }
 
 form > input {
@@ -203,7 +207,11 @@ footer > nav > ul {
 
 /* ====== desktop styling ====== */
 @media (min-width: 1440px) {
-    
+    body {
+        margin: 80px 100px;
+    }
+
+
     .grid {
         display: grid;
         grid-template-columns: auto auto;
@@ -211,6 +219,10 @@ footer > nav > ul {
         grid-template-areas: 
         "left right"
         ;
+    }
+
+    .section-img {
+        width: 400px;
     }
 
 /* ====== desktop: introduction styling ====== */
@@ -230,7 +242,20 @@ footer > nav > ul {
         ;
     }
 
+    .introduction > img:first-child {   
+        width: 150px;
+    }
 
+    .introduction > img:nth-child(6) {
+        /* grid-area: img; */
+        margin-left: auto;
+        margin-right: auto;
+        width: 800px;
+    }
+
+    figure > img {
+        width: 25px;
+    }
 
 /* ====== desktop: grow together styling ====== */
 .grow-together > .wrapper {
@@ -263,6 +288,11 @@ footer > nav > ul {
 }
 
 /* ====== desktop: footer styling ====== */
+footer {
+    column-gap: 200px;
+}
+
+
 .legal {
     grid-area: left;
 }
