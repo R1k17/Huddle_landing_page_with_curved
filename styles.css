@@ -115,7 +115,7 @@ figure > h2 {
 }
 
 
-/* ====== flowing conversations styling ====== */
+/* ====== mobile: flowing conversations styling ====== */
 
 .flowing-conversations {
     grid-area: 3;
@@ -129,7 +129,7 @@ figure > h2 {
 
 
 
-/* ====== flowing conversations styling ====== */
+/* ====== mobile: users styling ====== */
 
 .your-users {
     grid-area: 4;
@@ -142,7 +142,7 @@ figure > h2 {
 }
 
 
-/* ====== call for action styling ====== */
+/* ====== mobile: call for action styling ====== */
 
 .call-for-action {
     grid-area: 5;
@@ -151,7 +151,7 @@ figure > h2 {
 
 
 
-/* ====== call for action styling ====== */
+/* ====== mobile: newsletter for action styling ====== */
 
 .newsletter {
     grid-area: 6;
@@ -170,7 +170,7 @@ form > button {
 
 
 
-/* ====== footer styling ====== */
+/* ====== mobile: footer styling ====== */
 
 footer {
     text-align: left;
@@ -203,21 +203,15 @@ footer > nav > ul {
 
 /* ====== desktop styling ====== */
 @media (min-width: 1440px) {
-    /* main {
+    
+    .grid {
         display: grid;
-        grid-template-columns: repeat(2, auto);
-        grid-template-rows: repeat(6,auto);
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
         grid-template-areas: 
-            "1l 1r"
-            "left right"
-            "3l 3r"
-            "4l 4r"
-            "5l 5r"
-            "6l 6r"
+        "left right"
         ;
-        margin-bottom: 100px;
-    } */
-
+    }
 
 /* ====== desktop: introduction styling ====== */
     .introduction {
@@ -239,21 +233,6 @@ footer > nav > ul {
 
 
 /* ====== desktop: grow together styling ====== */
-.grid {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "left right"
-    ;
-}
-
-.grow-together {
-    grid-area: 2;
-    /* has a wavy light-blue background! */
-    margin-bottom: 200px;
-}
-
 .grow-together > .wrapper {
     grid-area: left;
 }
@@ -263,6 +242,33 @@ footer > nav > ul {
     grid-area: right;
 }
 
+/* ====== desktop: flowing conversations styling ====== */
+.flowing-conversations > img {
+    margin-bottom: 50px;
+    grid-area: left;
+}
 
+.flowing-conversations > .wrapper {
+    grid-area: right;
+}
+
+/* ====== desktop: users styling ====== */
+.your-users > .wrapper {
+    grid-area: left;
+}
+
+.your-users > img {
+    margin-bottom: 50px;
+    grid-area: right;
+}
+
+/* ====== desktop: footer styling ====== */
+.legal {
+    grid-area: left;
+}
+
+.newsletter {
+    grid-area: right;
+}
 
 }

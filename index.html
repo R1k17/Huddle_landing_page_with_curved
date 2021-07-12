@@ -48,18 +48,22 @@
   </div>
 </section>
 
-<section role="region" aria-label="Advertising just-in-time threads for the community" class="flowing-conversations">
+<section role="region" aria-label="Advertising just-in-time threads for the community" class="flowing-conversations grid">
   <img src="images/illustration-flowing-conversation.svg" alt="four people sitting at a table talking and drinking coffee">
-  <h2>Flowing Conversations</h2>
-  <p>You wouldn't paginate a conversation in real life, so why do it online? Our threads have 
-    just-in-time loading for a more natural flow.</p>
+  <div aria-hidden="true" class="wrapper">
+    <h2>Flowing Conversations</h2>
+    <p>You wouldn't paginate a conversation in real life, so why do it online? Our threads have 
+      just-in-time loading for a more natural flow.</p>
+  </div>
 </section>
   
-<section role="region" aria-label="Easy Integration between huddle and an external communications app" class="your-users">
+<section role="region" aria-label="Easy Integration between huddle and an external communications app" class="your-users grid">
 <img src="images/illustration-your-users.svg" alt="three people talking to each other via smart devices">
-<h2>Your Users</h2>
-<p>It takes no time at all to integrate Huddle with your app's authentication solution. This means, 
+<div aria-hidden="true" class="wrapper">
+  <h2>Your Users</h2>
+  <p>It takes no time at all to integrate Huddle with your app's authentication solution. This means, 
   once signed in to your app, your users can start chatting immediately.</p>
+</div>
 </section>
 
 <section role="region" aria-label="Call for action to sign up" class="call-for-action">
@@ -67,41 +71,42 @@
 <button>Get Started For Free</button>
 </section>
 
-<section role="region" aria-label="Subscribe for the newsletter" class="newsletter">
-<h2>Newsletter</h2>
-<p>To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never 
-  send you spam or pass on your email address</p>
-  <form action="">
-    <input type="email" name="email">
-    <button type="submit">Subscribe</button>
-  </form>
-</section>
+
 </main>
 
-  <footer role="footer" aria-label="Inherits legal regulations and contact info">
-    <img src="images/logo.svg" alt="huddle logo">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia 
-      vestibulum a, ultrices quis sem.</p>
-      <nav>
-        <ul class="contact">
-          <li>Phone: +1-543-123-4567</li>
-          <li>example@huddle.com</li>
-        </ul>
-      </nav>
-      <nav>
-        <ul class="social">
-          <li>facebook logo</li>
-          <li>instagram logo</li>
-          <li>twitter logo</li>
-        </ul>
-      </nav>
+  <footer role="footer" class="grid">
+    <section role="region" aria-label="Subscribe for the newsletter" class="newsletter">
+      <h2>Newsletter</h2>
+      <p>To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never 
+        send you spam or pass on your email address</p>
+        <form action="">
+          <input type="email" name="email">
+          <button type="submit">Subscribe</button>
+        </form>
+      </section>
 
-
-      <p class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-        Coded by <a href="#">Your Name Here</a>.
-      </p>
+      <section role="region" aria-label="Inherits legal regulations and contact info" class="legal">
+        <img src="images/logo.svg" alt="huddle logo">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia 
+          vestibulum a, ultrices quis sem.</p>
+          <nav>
+            <ul class="contact">
+              <li>Phone: +1-543-123-4567</li>
+              <li>example@huddle.com</li>
+            </ul>
+          </nav>
+          <nav>
+            <ul class="social">
+              <li>facebook logo</li>
+              <li>instagram logo</li>
+              <li>twitter logo</li>
+            </ul>
+          </nav>
+      </section>
   </footer>
-  
+  <p class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </p>
 </body>
 </html>
