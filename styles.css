@@ -2,7 +2,7 @@
 .attribution a { color: hsl(228, 45%, 44%); }
 
 body {
-    margin: 30px 30px;
+    /* margin: 30px 30px; */
     text-align: center;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
@@ -35,20 +35,24 @@ main {
         "5"
         "6"
     ;
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
+    
 }
 
 .section-img {
     margin-bottom: 50px;
 }
 
-
+button {
+    -webkit-box-shadow: 5px 5px 15px -5px rgba(0,0,0,0.45); 
+    box-shadow: 5px 5px 15px -5px rgba(0,0,0,0.45);
+}
 
 /* ====== mobile: introduction styling ====== */
 
 .introduction {
     grid-area: 1;
-    margin-bottom: 200px;
+    padding-bottom: 200px;
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: repeat(7, auto);
@@ -61,6 +65,10 @@ main {
     "f1 f1"
     "f2 f2"
     ;
+
+    background: url(images/bg-section-top-mobile-1.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
 }
 
 .introduction > img:first-child {
@@ -78,10 +86,21 @@ main {
     height: 25px;
     line-height: 12.5px;
     font-size: 12px;
-    color: hsl(321, 100%, 78%);
-    border-color: hsl(321, 100%, 78%);
+    color: hsl(322, 100%, 66%);
+    border-color: hsl(322, 100%, 66%);
 }
 
+.btn-primary:hover {
+    /* color: hsl(321, 100%, 78%); */
+    border-color: hsl(321, 100%, 78%);
+    background-color: hsl(321, 100%, 78%);
+}
+
+.btn-outline-primary:hover {
+    color: hsl(321, 100%, 78%);
+    border-color: hsl(321, 100%, 78%);
+    background-color: #fff;
+}
 
 .introduction > h1 {
     grid-area: h1;
@@ -102,6 +121,8 @@ main {
     background-color: hsl(322, 100%, 66%);
     border-color: hsl(322, 100%, 66%);
 }
+
+
 
 .introduction > img:nth-child(6) {
     grid-area: img;
@@ -143,8 +164,8 @@ figcaption {
 
 .grow-together {
     grid-area: 2;
-    /* has a wavy light-blue background! */
-    margin-bottom: 200px;
+    background-color: hsl(207, 100%, 98%);
+    padding-bottom: 100px;
 }
 
 /* .grow-together > img {
@@ -156,7 +177,15 @@ figcaption {
 
 .flowing-conversations {
     grid-area: 3;
-    margin-bottom: 200px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    background-image: url(images/bg-section-bottom-mobile-1.svg), url(images/bg-section-top-mobile-2.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top, bottom;
+
+
+    
 }
 
 /* .flowing-conversations > img {
@@ -170,8 +199,8 @@ figcaption {
 
 .your-users {
     grid-area: 4;
-    /* has a wavy light-blue background! */
-    margin-bottom: 200px;
+    /* padding-top: 200px; */
+    background-color: hsl(207, 100%, 98%);
 }
 
 /* .your-users > img {
@@ -183,7 +212,13 @@ figcaption {
 
 .call-for-action {
     grid-area: 5;
-    margin-bottom: 200px;
+    padding-bottom: 200px;
+    padding-top: 200px;
+    background: url(images/bg-section-bottom-mobile-2.svg), url(images/bg-footer-top-mobile.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top, bottom;
+
+    
 }
 
 .call-for-action > button {
@@ -210,6 +245,11 @@ form > input {
     border-radius: 8px;
 }
 
+input:hover {
+    border-color: hsl(321, 100%, 78%);
+    cursor: pointer;
+}
+
 form > button {
     float: right;
     width: 150px;
@@ -225,7 +265,6 @@ form > .btn-primary {
 
 footer {
     text-align: left;
-    /* has a wavy dark-green background! */
     background-color: hsl(192, 100%, 9%);
     color: #fff;
 }
@@ -259,16 +298,15 @@ footer > nav > ul {
     border-radius: 5px;
 }
 
-.social > li > i {
-    /* line-height: 12.5px; */
-    
-}
-
 .social > li:nth-of-type(2) {
     color: #fff;
     background-color: hsl(192, 100%, 9%);
 }
 
+.social > li:hover {
+ background-color: hsl(228, 92%, 74%);   
+    
+}
 
 
 /* ====== desktop styling ====== */
