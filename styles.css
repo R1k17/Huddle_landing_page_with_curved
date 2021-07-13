@@ -4,6 +4,19 @@
 body {
     margin: 30px 30px;
     text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: hsl(192, 100%, 9%);
+}
+
+h1, h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+p {
+    font-weight: 400;
+    font-size: 12px;
 }
 
 img {
@@ -28,6 +41,7 @@ main {
 .section-img {
     margin-bottom: 50px;
 }
+
 
 
 /* ====== mobile: introduction styling ====== */
@@ -57,8 +71,17 @@ main {
 
 .int-btn-one {
     grid-area: b1;
-    float: right;
+    /* float: right; */
+    margin-left: auto;
+    border-radius: 23px;
+    width: 80px;
+    height: 25px;
+    line-height: 12.5px;
+    font-size: 12px;
+    color: hsl(321, 100%, 78%);
+    border-color: hsl(321, 100%, 78%);
 }
+
 
 .introduction > h1 {
     grid-area: h1;
@@ -71,8 +94,13 @@ main {
 
 .int-btn-two{
     grid-area: b2;
-    margin-top: 30px;
-    margin-bottom: 80px;
+    width: 250px;
+    height: 40px;
+    margin: 30px auto 80px auto;
+    border-radius: 23px;
+    color: #fff;
+    background-color: hsl(322, 100%, 66%);
+    border-color: hsl(322, 100%, 66%);
 }
 
 .introduction > img:nth-child(6) {
@@ -99,8 +127,14 @@ figure > h2 {
     /* I want the communities icon to float over the follower counter! is display inline-block and width working? */
     display: inline-block;
     width: 100%;
+    font-weight: 600;
+    font-size: 46px;
 }
 
+figcaption {
+    opacity: 0.5;
+    font-size: 12px;
+}
 
 
 
@@ -152,7 +186,13 @@ figure > h2 {
     margin-bottom: 200px;
 }
 
-
+.call-for-action > button {
+    border-radius: 23px;
+    width: 250px;
+    color: #fff;
+    background-color: hsl(322, 100%, 66%);
+    border-color: hsl(322, 100%, 66%);
+}
 
 /* ====== mobile: newsletter for action styling ====== */
 
@@ -165,25 +205,35 @@ figure > h2 {
 
 form > input {
     width: 100%;
+    height: 40px;
     margin-bottom: 10px;
+    border-radius: 8px;
 }
 
 form > button {
     float: right;
+    width: 150px;
 }
 
-
+form > .btn-primary {
+    color: #fff;
+    background-color: hsl(322, 100%, 66%);
+    border-color: hsl(322, 100%, 66%);
+}
 
 /* ====== mobile: footer styling ====== */
 
 footer {
     text-align: left;
     /* has a wavy dark-green background! */
+    background-color: hsl(192, 100%, 9%);
+    color: #fff;
 }
 
 footer > img {
     /* float: left; */
     width: 180px;
+    color: #fff;
 }
 
 footer > p {
@@ -201,6 +251,22 @@ footer > nav > ul {
 
 .social > li {
     display: inline-block;
+    background-color: #fff;
+    color:hsl(192, 100%, 9%);
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.social > li > i {
+    /* line-height: 12.5px; */
+    
+}
+
+.social > li:nth-of-type(2) {
+    color: #fff;
+    background-color: hsl(192, 100%, 9%);
 }
 
 
