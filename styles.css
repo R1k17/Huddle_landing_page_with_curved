@@ -1,8 +1,8 @@
-.attribution { font-size: 11px; text-align: center; }
+.attribution { font-size: 11px; text-align: center; margin: 0; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
 body {
-    /* margin: 30px 30px; */
+    /* padding: 30px 30px; */
     text-align: center;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
@@ -40,7 +40,12 @@ main {
 }
 
 .section-img {
-    margin-bottom: 50px;
+    margin: 100px auto 100px auto;
+}
+
+.padding {
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 button {
@@ -69,18 +74,23 @@ button {
     background: url(images/bg-section-top-mobile-1.svg);
     background-repeat: no-repeat;
     background-position: bottom;
+    background-size: contain;
 }
 
 .introduction > img:first-child {
     grid-area: logo;
     float: left;
     width: 100px;
+    margin-top: 30px;
+    margin-left: 30px;
 }
 
 .int-btn-one {
     grid-area: b1;
     /* float: right; */
     margin-left: auto;
+    margin-right: 30px;
+    margin-top: 30px;
     border-radius: 23px;
     width: 80px;
     height: 25px;
@@ -104,18 +114,21 @@ button {
 
 .introduction > h1 {
     grid-area: h1;
-    margin-top: 80px;
+    margin-top: 100px;
+    margin-bottom: 30px;
 }
 
 .introduction > p {
     grid-area: p;
+    margin-top: 0;
+    margin-bottom: 50px;
 }
 
 .int-btn-two{
     grid-area: b2;
     width: 250px;
     height: 40px;
-    margin: 30px auto 80px auto;
+    margin: 30px auto 100px auto;
     border-radius: 23px;
     color: #fff;
     background-color: hsl(322, 100%, 66%);
@@ -126,6 +139,7 @@ button {
 
 .introduction > img:nth-child(6) {
     grid-area: img;
+    margin: 0 auto 100px auto;
 }
 
 .communities {
@@ -137,24 +151,34 @@ button {
 }
 
 figure {
-    margin-top: 80px;
+    margin: 80px 30px 100px 30px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    ".. img .."
+    ".. h2 .."
+    "cap cap cap"
+    ;
 }
 
 figure > img {
-    float: left;
+    grid-area: img;
+    width: 30px;
 }
 
 figure > h2 {
     /* I want the communities icon to float over the follower counter! is display inline-block and width working? */
-    display: inline-block;
     width: 100%;
     font-weight: 600;
     font-size: 46px;
+    grid-area: h2;
 }
 
 figcaption {
     opacity: 0.5;
     font-size: 12px;
+    grid-area: cap;
 }
 
 
@@ -168,9 +192,9 @@ figcaption {
     padding-bottom: 100px;
 }
 
-/* .grow-together > img {
-    margin-bottom: 50px;
-} */
+.grow-together > img {
+    margin-bottom: 100px;
+}
 
 
 /* ====== mobile: flowing conversations styling ====== */
@@ -183,14 +207,14 @@ figcaption {
     background-image: url(images/bg-section-bottom-mobile-1.svg), url(images/bg-section-top-mobile-2.svg);
     background-repeat: no-repeat, no-repeat;
     background-position: top, bottom;
-
+    background-size: contain;
 
     
 }
 
-/* .flowing-conversations > img {
-    margin-bottom: 50px;
-} */
+.flowing-conversations > img {
+    margin-top: 50px;
+}
 
 
 
@@ -217,7 +241,7 @@ figcaption {
     background: url(images/bg-section-bottom-mobile-2.svg), url(images/bg-footer-top-mobile.svg);
     background-repeat: no-repeat, no-repeat;
     background-position: top, bottom;
-
+    background-size: contain;
     
 }
 
@@ -235,14 +259,22 @@ figcaption {
     grid-area: 6;
     text-align: left;
     /* has a wavy dark-green background! */
-    margin-bottom: 100px;
+    margin-bottom: 200px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
+
+
 
 form > input {
     width: 100%;
     height: 40px;
     margin-bottom: 10px;
     border-radius: 8px;
+}
+
+form > input:invalid {
+    color: hsl(0, 100%, 63%);
 }
 
 input:hover {
@@ -269,45 +301,50 @@ footer {
     color: #fff;
 }
 
-footer > img {
+footer > section > img {
     /* float: left; */
     width: 180px;
     color: #fff;
 }
 
-footer > p {
+footer > section > p {
     margin-bottom: 40px;
 }
 
-footer > nav > ul {
+footer > section > nav > ul {
     list-style: none;
     padding-left: 0;
 }
 
+.contact {
+    margin-bottom: 40px;
+}
+
 .contact > li {
     margin-top: 10px;
+    
 }
 
 .social > li {
     display: inline-block;
-    background-color: #fff;
-    color:hsl(192, 100%, 9%);
+    /* background-color: #fff; */
+    color: #fff;
     width: 25px;
     height: 25px;
     text-align: center;
     border-radius: 5px;
 }
 
-.social > li:nth-of-type(2) {
-    color: #fff;
-    background-color: hsl(192, 100%, 9%);
-}
 
 .social > li:hover {
  background-color: hsl(228, 92%, 74%);   
     
 }
 
+.legal {
+    padding-left: 20px;
+    padding-right: 20px;
+}
 
 /* ====== desktop styling ====== */
 @media (min-width: 1440px) {
